@@ -122,6 +122,8 @@ nav li:first-child {
 	overflow: hidden;
 }
 
+/*------------------------------ homepage ------------------------------*/
+
 .montage-vid {
     position: absolute;
     top: 50%;
@@ -196,10 +198,16 @@ nav li:first-child {
 	display: flex;
 	justify-content: center;
     align-items: center;
-	background: var(--white-color);
 	color: var(--white-color);
 	padding: 60px 20px;
 	text-align: center;
+	width:650px;
+    margin:100px auto;
+
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+
+    border-radius:20px;
 }
 
 .contact h2 {
