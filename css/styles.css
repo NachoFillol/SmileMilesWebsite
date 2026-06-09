@@ -10,6 +10,7 @@
 	--black-color: #000000; /* var(--black-color) */
 	--white-color: #fff; /* var(--white-color) */
     --third-color: #F0D86E; /* var(third-color) */
+	--extra-color: #FFF8E7; /* var(--extra-color) */
 }
 
 html, body {
@@ -134,7 +135,7 @@ nav li:first-child {
 }*/
 
 .video-wrapper {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -167,7 +168,7 @@ nav li:first-child {
 }
 
 .video-overlay {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -213,6 +214,66 @@ nav li:first-child {
 	.sidebar{
 		width: 100%;
 	}
+}
+
+/*-------------- about --------------*/
+
+.about {
+	background: var(--extra-color);
+	color: var(--black-color);
+	padding: 60px 20px;
+	text-align: center;
+	height: 100%;
+}
+
+.about-container {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about-card {
+	background: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 12px;
+	padding: 25px;
+	width: 425px;
+	text-align: justify;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-card h1 {
+	color: var(--black-color);
+	text-align: center;
+}
+
+.about-card h2 {
+	color: var(--black-color);
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.hero-btns{
+	display: flex;
+	margin: 35px 15px;
+	justify-content: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: var(--third-color);
+	color: var(--black-color);
+	font-weight: 600;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
 /*-------------- contact --------------*/
