@@ -31,57 +31,136 @@
     <!-- Main Content -->
     <main class="gallery-page">
 
-        <!-- Title Section -->
+    <!-- Title Section -->
         <section class="gallery-title">
-            <h1>Gallery</h1>
+            <h1 class="text-xl">Gallery</h1>
             <p>Capturing smiles, moments, and memories.</p>
         </section>
 
-        <!-- Large Featured Image -->
-	<div class="column">
-
-    <!-- Left: Video -->
-    <section class="gallery-feature">
-        <video src="<iframe width="560" height="315" src="https://www.youtube.com/embed/sRKo09tgntw?si=XJmMrC8LNsXjFUdH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"></video>
-    </section>
-
-    <!-- Right: Text -->
-    <div class="gallery-description">
-        <p>
-            temporary temporary temporary temporary temporary temporary  
-            temporary temporary temporary temporary temporary temporary  
-            temporary temporary temporary temporary temporary
+    <!-- Video of the Week Label -->
+        <p class="gallery-week-label">
+            <i class="ti ti-star"></i> Video of the week
         </p>
-    </div>
 
-</div>
+    <!-- Featured Video + Description -->
+        <div class="gallery-column">
 
-        <!-- Gallery Grid -->
+            <!-- Left: Video -->
+            <section class="gallery-feature">
+                <span class="gallery-badge">
+                    <i class="ti ti-award"></i> This week's pick
+                </span>
+                <iframe
+                    src="https://www.youtube.com/embed/4lp_u9_i5V8?autoplay=1&mute=1&loop=1&playlist=4lp_u9_i5V8&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </section>
+
+            <!-- Right: Text -->
+            <div class="gallery-description">
+                <h1>From Gower Park to the lake's edge — a Hamilton morning walk</h1>
+                <p>
+                    We start where the locals do — at Gower Park on Alison Street, where the wide green fields
+                    and quiet paths make for a gentle warm-up. From there, the walk winds out through the leafy
+                    streets of the Hamilton Lake neighbourhood, past front gardens and unhurried corners that give
+                    a real feel for everyday life in this part of Waikato. The pace is easy and the streets are
+                    calm. When the trees clear, Lake Rotoroa opens up ahead — and the rest of the walk follows
+                    the famous 3.8 km lakeside loop, with ducks, pūkeko, and a boardwalk stretch to enjoy before
+                    a well-earned rest by the water.
+                </p>
+                <div class="gallery-meta">
+                    <span><i class="ti ti-clock"></i> 22 min</span>
+                    <span><i class="ti ti-map-pin"></i> Hamilton, NZ</span>
+                    <span><i class="ti ti-arrows-right"></i> 2 km</span>
+                </div>
+                <div class="gallery-tags">
+                    <span class="tag-green">Lakeside</span>
+                    <span class="tag-green">Flat &amp; easy</span>
+                    <span class="tag-yellow">New Zealand</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=4lp_u9_i5V8" class="btn" target="_blank">
+                    <i class="ti ti-player-play"></i> Watch now
+                </a>
+            </div>
+
+        </div><!-- /.column (featured) -->
+
+    <!-- Gallery Grid -->
         <section class="gallery-grid">
+            <h2 class="gallery-grid-title">More walks to explore</h2>
+            <div class="gallery-grid-row">
 
-            <!-- gallery-card row -->
-        <div class="column">
-		   <div class="gallery-card">
-                <img src="imagesplaceholder.png">
-                <h3>Title One</h3>
-            </div>
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/LJm3KVwoWKg?autoplay=1&mute=1&loop=1&playlist=LJm3KVwoWKg&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Te Hikuwai - Walk with Us</h3>
+                        <p>24 min · Hamilton, NZ · 2.5km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Park walk</span>
+                            <span class="tag-green">Nature</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=LJm3KVwoWKg" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
 
-            <div class="gallery-card">
-                <img src="imagesplaceholder.png" alt="Image 2">
-                <h3>Title Two</h3>
-            </div>
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/sRKo09tgntw?autoplay=1&mute=1&loop=1&playlist=sRKo09tgntw&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Hamilton Lake - Walk with Us</h3>
+                        <p>15 min · Hamilton, NZ · 1.5km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Lakeside</span>
+                            <span class="tag-green">Nature</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=sRKo09tgntw" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
 
-            <div class="gallery-card">
-                <img src="imagesplaceholder.png" alt="Image 3">
-                <h3>Title Three</h3>
-            </div>
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/4lp_u9_i5V8?autoplay=1&mute=1&loop=1&playlist=4lp_u9_i5V8&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Gower Park - Walk with Us</h3>
+                        <p>22 min · Hamilton, NZ · 2km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Lakeside</span>
+                            <span class="tag-green">Park walk</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=4lp_u9_i5V8" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
 
-            <div class="gallery-card">
-                <img src="imagesplaceholder.png" alt="Image 4">
-                <h3>Title Four</h3>
-            </div>
-	
-        </section>
+            </div><!-- /.gallery-grid-row -->
+        </section><!-- /.gallery-grid -->
 
     </main>
 
